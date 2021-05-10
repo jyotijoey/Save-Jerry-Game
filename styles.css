@@ -1,0 +1,62 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#jerry {
+    width: 60px;
+    height: 60px;
+    background-image: url(\jerry.png);
+    background-size: 60px 60px;
+    position: relative;
+    top: 140px;
+    
+}
+
+h1{
+    text-align: center;
+}
+#bomb {
+    width: 45px;
+    height: 45px;
+    position:relative;
+    top: 98px;
+    left: 550px;
+    background-image: url(bomb.png);
+    background-size: 45px 45px;
+
+    animation: block 1.2s infinite linear;
+}
+
+.jump{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump{
+    0%{
+        top:140px;
+    }
+    30%{
+        top:110px;
+    }
+    50%{
+        top: 60px;
+    }
+    80%{
+        top:110px;
+    }
+    100%{
+        top:140px;
+    }
+}
+
+@keyframes block {
+    0%{
+        left:580px;
+    }
+    100%{
+        left:-20px;
+    }
+}
